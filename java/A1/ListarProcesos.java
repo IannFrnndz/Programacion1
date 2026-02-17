@@ -1,0 +1,34 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class ListarProcesos {
+
+    public static void main(String[] args) {
+        try {
+            // Abrimos la consola con el cmd y ejecutamos el tasklist, que nos va a servir para ver las tareas
+            ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "tasklist");
+
+            // ejecutamos tasklist y devolvemos el objeto de proceso que representa el objeto en ejecucion
+            Process process = processBuilder.start();
+
+            // Leemos la salida del comando
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(process.getInputStream())
+            );
+
+            String linea;
+            System.out.println("PROCESOS EN EJECUCIÓN \n");
+            while ((linea = reader.readLine()) != null) {
+                System.out.println(linea);
+            }
+
+            // Esperamos a que termine el proceso y escribimos el codigo que manda
+            int exitCode = process.waitFor();
+            System.out.println("\nProceso finalizado con código: " + exitCode);
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}

@@ -1,0 +1,42 @@
+package repaso;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Coche c = new Coche(4,false);
+		Moto m = new Moto(2,true);
+		Bicicleta b = new Bicicleta(2,true);
+		
+		
+		System.out.println("DATOS DEL COCHE:");
+		
+		c.acelerar();
+		System.out.println("Velocidad al acelerar: " + c.velocidad);
+		
+		c.frenar();
+		System.out.println("Velocidad al frenar: " + c.velocidad);
+		
+		c.setAireAcondicionado(true);
+		
+		System.out.println("DATOS DE LA MOTO:");
+		
+		m.acelerar();
+		System.out.println("Velocidad al acelerar: " + c.velocidad);
+		
+		m.frenar();
+		System.out.println("Velocidad al frenar: " + c.velocidad);
+		
+		m.setTieneCasco(false);
+		
+		System.out.println("DATOS DE LA BICI:");
+		
+		m.acelerar();
+		System.out.println("Velocidad al acelerar: " + c.velocidad);
+		
+		m.frenar();
+		System.out.println("Velocidad al frenar: " + c.velocidad);
+		
+		m.setTieneCasco(false);		
+		
+	}
+}

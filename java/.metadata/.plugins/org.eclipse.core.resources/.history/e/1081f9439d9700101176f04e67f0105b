@@ -1,0 +1,23 @@
+package repaso;
+
+public class Moto extends VehiculoTerrestre{
+
+	boolean tieneCasco;
+	public Moto(int ruedas, boolean tieneCasco) {
+		super(ruedas);
+		this.tieneCasco = tieneCasco;
+	}
+
+	@Override
+	public void acelerar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void frenar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

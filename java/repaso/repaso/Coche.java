@@ -1,0 +1,38 @@
+package repaso;
+
+public class Coche extends VehiculoTerrestre{
+	   boolean tieneAireAcondicionado;
+	   
+	   public Coche(int ruedas, boolean tieneAireAcondicionado){
+	       super(ruedas);
+	       this.tieneAireAcondicionado = tieneAireAcondicionado;
+	       this.velocidad = 0;
+	   }
+
+	   @Override
+	   public void acelerar() {
+	       velocidad = velocidad+10;
+	   }
+
+
+	   @Override
+	   public void frenar() {
+	       velocidad = velocidad -5;
+	   }
+
+
+	   public void setAireAcondicionado(boolean estado) {
+	       this.tieneAireAcondicionado = estado;
+	       if (estado) {
+	           System.out.println("Aire acondicionado activado");
+	       } else {
+	           System.out.println("Aire acondicionado desactivado");
+	       }
+	   }
+
+
+	   public boolean estaEncendido(){
+	       return tieneAireAcondicionado;
+	   }
+	}
+

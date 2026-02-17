@@ -1,0 +1,17 @@
+import java.io.IOException;
+
+public class Calculadora {
+
+    public static void main(String[] args) {
+        try {
+            // Ejecutar la calculadora directamente
+            Runtime.getRuntime().exec("calc.exe");
+            
+            System.out.println("Calculadora abierta correctamente.");
+            
+        } catch (IOException e) {
+            System.out.println("Error al intentar abrir la calculadora.");
+            e.printStackTrace();
+        }
+    }
+}

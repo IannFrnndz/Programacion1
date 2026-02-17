@@ -1,0 +1,13 @@
+
+public abstract class AnimalBase {
+
+	protected String nombre;
+	public AnimalBase(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public void comer() {
+		System.out.println(nombre +"Esta comiendo");
+	}
+
+}

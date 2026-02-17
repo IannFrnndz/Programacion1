@@ -1,0 +1,9 @@
+
+public class Perro extends AnimalBase{
+
+	
+	public Perro(String nombre) {
+		super(nombre);
+	}
+
+}

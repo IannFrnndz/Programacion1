@@ -1,0 +1,9 @@
+package repaso2;
+
+public abstract class DispositivoBase {
+
+	public DispositivoBase() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

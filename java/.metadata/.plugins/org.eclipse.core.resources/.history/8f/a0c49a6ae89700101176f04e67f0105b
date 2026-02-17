@@ -1,0 +1,27 @@
+package repaso2;
+
+public abstract class DispositivoBase implements Dispositivo{
+
+	protected boolean estaEncendido;
+	
+	public DispositivoBase() {
+		this.estaEncendido = false;
+	}
+	
+	@Override
+	public void encender() {
+		if (!estaEncendido) {
+			estaEncendido = true;
+			System.out.println("Se ha encendido el dispositivo");
+		}else {
+			System.out.println("El dispositivo ya estaba encendido");
+		}
+	}
+	
+	@Override
+	public abstract void apagar();
+
+	
+	@Override
+	public abstract void mostrarEstado();
+}

@@ -1,0 +1,17 @@
+package repaso;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Coche c = new Coche(4,false);
+		
+		c.acelerar();
+		System.out.println("Velocidad al acelerar: " + c.velocidad);
+		
+		c.frenar();
+		System.out.println("Velocidad al frenar: " + c.velocidad);
+		
+		c.setAireAcondicionado(true);
+		System.out.println("Esta el aire encendido? : " + c.estaEncendido());
+	}
+}

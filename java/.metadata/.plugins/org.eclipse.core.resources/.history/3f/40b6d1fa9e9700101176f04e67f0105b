@@ -1,0 +1,31 @@
+package repaso;
+
+public class Moto extends VehiculoTerrestre{
+
+	boolean tieneCasco;
+	public Moto(int ruedas, boolean tieneCasco) {
+		super(ruedas);
+		this.tieneCasco = tieneCasco;
+	}
+
+	@Override
+	public void acelerar() {
+		velocidad = velocidad+20;
+		
+	}
+
+	@Override
+	public void frenar() {
+		velocidad = velocidad-10;
+		
+	}
+
+	public void setTieneCasco(boolean estado) {
+	       this.tieneCasco = estado;
+	       if (estado) {
+	           System.out.println("Tiene el casco puesto");
+	       } else {
+	           System.out.println("No tiene el casco puesto");
+	       }
+	   }
+}

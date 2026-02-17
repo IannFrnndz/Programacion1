@@ -1,0 +1,34 @@
+package repaso;
+
+public class Bicicleta extends VehiculoTerrestre{
+
+	boolean tieneTimbre;
+	
+	public Bicicleta(int ruedas, boolean tieneTimbre) {
+		super(ruedas);
+		this.tieneTimbre = tieneTimbre;
+		this.velocidad = 0;
+	}
+
+	@Override
+	public void acelerar() {
+		velocidad = velocidad+5;
+		
+	}
+
+	@Override
+	public void frenar() {
+		velocidad = velocidad-2;
+		
+	}
+	
+	public void setTieneTimbre(boolean estado) {
+	       this.tieneTimbre = estado;
+	       if (estado) {
+	           System.out.println("Ring ring");
+	       } else {
+	           System.out.println("No tiene timbre");
+	       }
+	   }
+
+}

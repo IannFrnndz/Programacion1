@@ -1,0 +1,20 @@
+package repaso2;
+
+public abstract class DispositivoBase implements Dispositivo{
+
+	protected boolean estaEncendido;
+	
+	public DispositivoBase(boolean estaEncendido) {
+		this.estaEncendido = estaEncendido;
+	}
+	
+	@Override
+	public abstract void encender();
+	
+	@Override
+	public abstract void apagar();
+
+	
+	@Override
+	public abstract void mostrarEstado();
+}

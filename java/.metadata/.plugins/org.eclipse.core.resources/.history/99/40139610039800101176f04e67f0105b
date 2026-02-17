@@ -1,0 +1,15 @@
+
+public class Main {
+
+	  public static void main(String[] args) {
+		  
+		  Perro perro = new Perro("Logan");
+		  Loro loro = new Loro("Mapache");
+		  Tiburon tiburon = new Tiburon("Dibu");
+		  
+		  
+	  }
+	  
+	  
+
+}

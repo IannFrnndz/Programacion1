@@ -1,0 +1,12 @@
+package repaso2;
+
+public class Telefono {
+	public void realizarLlamada() {
+		
+	}
+	
+	public Telefono() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

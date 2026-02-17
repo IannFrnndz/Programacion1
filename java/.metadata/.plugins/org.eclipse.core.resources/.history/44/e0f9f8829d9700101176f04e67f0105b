@@ -1,0 +1,9 @@
+package repaso;
+
+public class Bicicleta {
+
+	public Bicicleta() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

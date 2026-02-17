@@ -1,0 +1,9 @@
+package repaso2;
+
+public abstract class DispositivoBase implements Dispositivo{
+
+	public DispositivoBase() {
+		
+	}
+
+}

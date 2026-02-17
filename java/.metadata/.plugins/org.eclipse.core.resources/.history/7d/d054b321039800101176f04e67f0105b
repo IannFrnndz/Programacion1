@@ -1,0 +1,23 @@
+
+public class Main {
+
+	  public static void main(String[] args) {
+		  
+		  Perro perro = new Perro("Logan");
+		  Loro loro = new Loro("Mapache");
+		  Tiburon tiburon = new Tiburon("Dibu");
+		  
+		  System.out.println("SISTEMA DE ANIMALES");
+		  
+		  perro.comer();
+		  perro.hacerRuido();
+		  perro.estaContento();
+		  
+		  loro.comer();
+		  loro.hacerRuido();
+		  loro.volar();
+	  }
+	  
+	  
+
+}
